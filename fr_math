@@ -1,0 +1,78 @@
+partial alphanumeric_keys
+xkb_symbols "oss_math" {
+    include "fr(oss)"
+    name[Group1]="French (     alternative, math)";
+
+    // First row
+    key <TLDE>	{ [              oe,                 OE,                  ae,                    AE ] }; //  œ  Œ  æ  Æ
+    key <AE02>	{ [          eacute,                  2,          asciitilde,                EACUTE ] }; //  é  2  ~  É  TODO
+    key <AE03>	{ [        quotedbl,                  3,          numbersign,      dead_doubleacute ] }; //  "  3  #  ˝  Check acute really dead
+    key <AE04>	{ [      apostrophe,                  4,           braceleft,            dead_acute ] }; //  '  4  {  ´  Check idem
+    key <AE05>	{ [       parenleft,                  5,         bracketleft             registered ] }; //  (  5  [  –  TODO
+    key <AE06>	{ [           minus,                  6,                 bar,             brokenbar ] }; //  -  6  |  ¦
+    key <AE07>	{ [          egrave,                  7,          dead_grave             dead_tilde ] }; //  è  7 `ì ~ñ  Check
+    key <AE08>	{ [      underscore,                  8,           backslash,           dead_macron ] }; //  _  8  \ ¯ē
+    key <AE09>	{ [        ccedilla,                  9,        dead_cedilla,           dead_ogonek ] }; //  ç  9 ¸ç ˛ę
+    key <AE10>	{ [          agrave,                  0,                  at,                Agrave ] }; //  à  0  @  À
+    key <AE11>	{ [      parenright,             degree,        bracketright,            registered ] }; //  )  °  ]  ℃  TODO
+    key <AE12>  { [           equal,               plus,          braceright,              notequal ] }; //  )  °  ]  ≠  CHECK ≠
+
+    // Secund row
+    key <AD01>  { [               a,                 A,          Greek_alpha,           Greek_ALPHA ] }; //  a  A  α  Α
+    key <AD02>  { [               z,                 Z,           Greek_zeta,            registered ] }; //  z  Z  ζ  ℤ TODO
+    key <AD03>  { [               e,                 E,        Greek_epsilon,             Greek_ETA ] }; //  e  E  ε  η
+    key <AD04>  { [               r,                 R,            Greek_rho,            registered ] }; //  r  R  ρ  ℝ TODO
+    key <AD05>  { [               t,                 T,          Greek_theta,           Greek_THETA ] }; //  t  T  θ  Θ
+    key <AD06>  { [               y,                 Y                                              ] }; //  y  Y
+    key <AD07>  { [               u,                 U,        Greek_upsilon,         Greek_UPSILON ] }; //  u  U  υ  Υ
+    key <AD08>  { [               i,                 I,           Greek_iota,             0x100037a ] }; //  i  I  ι  Ι
+    key <AD09>  { [               o,                 O,                   oe,                    OE ] }; //  o  O  ø  Ø
+    key <AD10>  { [               p,                 P,             Greek_pi,              Greek_PI ] }; //  p  P  π  Π
+    key <AD11>  { [ dead_circumflex,    dead_diaeresis,           dead_breve,            dead_caron ] }; // ^ê ¨ë ˘ĕ ˇě
+    key <AD12>  { [          dollar,         sterling,             0x1002202,             0x100222b ] }; //  $  £  €  ¥
+
+    // Third row
+    key <AC01>  { [               q,               Q,             registered,            registered ] }; //  q  Q     ℚ TODO
+    key <AC02>  { [               s,               S,            Greek_sigma,           Greek_SIGMA ] }; //  s  S  σ  Σ
+    key <AC03>  { [               d,               D,            Greek_delta,           Greek_DELTA ] }; //  d  D  δ  Δ
+    key <AC04>  { [               f,               F,              Greek_phi,             Greek_PHI ] }; //  f  F  φ  Φ
+    key <AC05>  { [               g,               G,            Greek_gamma,           Greek_GAMMA ] }; //  g  G  γ  Γ
+    key <AC06>  { [               h,               H,              Greek_eta,             Greek_ETA ] }; //  h  H  η  Η
+    key <AC07>  { [               j,               J                                                ] }; //  j  J
+    key <AC08>  { [               k,               K,            Greek_kappa,           Greek_KAPPA ] }; //  k  K  κ  Κ
+    key <AC09>  { [               l,               L,           Greek_lambda,          Greek_LAMBDA ] }; //  l  L  λ  Λ
+    key <AC10>  { [               m,               M,               Greek_mu,            registered ] }; //  m  M  μ
+    key <AC11>  { [          ugrave,         percent,             registered,                Ugrave ] }; //  ù  %  ‰  Ù TODO
+    key <BKSL>  { [        asterisk,              mu,         multiplication                        ] }; //  *  µ  ×  ∞ TODO+check
+
+    // Fourth row
+    key <LSGT>  { [            less,         greater,          lessthanequal,      greaterthanequal ] }; //  <  >  ≤  ≥
+    key <AB01>  { [               w,               W,            Greek_omega,           Greek_OMEGA ] }; //  w  W  ω  Ω
+    key <AB02>  { [               x,               X,               Greek_xi,              Greek_XI ] }; //  x  X  ξ  Ξ
+    key <AB03>  { [               c,               C,              Greek_chi,            registered ] }; //  c  C  χ  ℂ TODO
+    key <AB04>  { [               v,               V                                                ] }; //  v  V
+    key <AB05>  { [               b,               B,             Greek_beta                        ] }; //  b  B  β
+    key <AB06>  { [               n,               N,               Greek_nu,            registered ] }; //  n  N  ν  ℕ TODO
+    key <AB07>  { [           comma,        question,              0x100222b,             0x1002202 ] };̦ //  ,  ?  ∫  ∂
+    key <AB08>  { [       semicolon,          period,             registered,         dead_abovedot ] }; //  ;  .  ∘  ⋅ TODO
+    key <AB09>  { [           colon,           slash,             registered,              division ] }; //  :  /  ∈  ÷ TODO
+    key <AB10>	{ [          exclam,         section,             registered,            registered ] }; //  !  §  ∃  ∀ TODO
+
+    // Wish list
+    // Français : copyright registered « » “ ” ؟ironie espace_fin_insécable
+    // Math : divers : √ ∇ vecteurs ∮ ⊗ ø Ø ℋ  ∄ ∎cqfd ∖ensembles ∝proportionnel
+    // Math : égalité : ≅ ≈ ≆ ≝ ≞(par mesure) ≟ ≠
+    // Math : comparaison : ⊂ ⊃ ⊄ ⊅ ⊊ ⊋ ≪≫(math) ≺ ≻ ≼ ≽
+    // Math : lettres hébraïques, nombres transfini : ℵ ℶℷ ℸ
+    // Math  :ℑ et ℜ parties réelles et imaginaires
+    // Math : intégrales : ∫ ∬ ∭ ∮ ∯ ∰
+    // Math : matrices ⋮ ⋯ ⋰ ⋱
+    // Math : parties entières supérieures
+    // Math/typographie demi espaces insécables, pour mettre en évidence les virgules implicites
+    // Logique et et ou (et non ?) ∧ ∨
+    // Physique ℎ ℏ constante de planck et cst planck/2π ℓ litre
+    // Flèches : longues ⟶  ⟸ ⟹ ⟺  tordue↝ ⟼
+    // Typographie ronds au dessus comme dans Å => cf 00C5
+    // Contrôle mettre les lettres rondes, ou ajourées comme ℕ, ou gothiques => cf <police>, puis respectivement ~~0065, 03C0 et ~~ il semble que le caractere de contrôle dépende de la lettre à contrôler.
+    // Contrôle : mettre des vecteurs. Cf U+20D7
+}
